@@ -1,0 +1,37 @@
+version: '3'
+services:
+  car:
+    image: vamshi9133/carrepotransport:latest
+    ports:
+      - "80:80"
+    volumes:
+      - "carvol"
+    deploy:
+      replicas: 3
+
+  bike:
+    image: vamshi9133/bikerepotransport:latest
+    ports:
+      - "81:80"
+    volumes:
+      - "bikevol"
+    deploy:
+      replicas: 3
+
+  jeep:
+    image: vamshi9133/jeeprepotransport:latest
+    ports:
+      - "82:80"
+    volumes:
+      - "jeepvol"
+    deploy:
+      replicas: 3
+
+  bus:
+    image: vamshi9133/busrepotransport:latest
+    ports:
+      - "83:80"
+    volumes:
+      - "busvol"
+    deploy:
+      replicas: 3
