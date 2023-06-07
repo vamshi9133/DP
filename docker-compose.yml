@@ -1,28 +1,28 @@
 version: '3'
 services:
   devops:
-    image: vamshi9133/carrepotransport:latest
+    image: vamshi9133/bus1repotransport:latest
     ports:
       - "90:80"
     deploy:
       replicas: 3
 
   aws:
-    image: vamshi9133/bikerepotransport:latest
+    image: vamshi9133/bike1repotransport:latest
     ports:
       - "91:80"
     deploy:
       replicas: 3
 
   datascience:
-    image: vamshi9133/jeeprepotransport:latest
+    image: vamshi9133/jeep1repotransport:latest
     ports:
       - "92:80"
     deploy:
       replicas: 3
 
   azure:
-    image: vamshi9133/busrepotransport:latest
+    image: vamshi9133/car1repotransport:latest
     ports:
       - "93:80"
     deploy:
