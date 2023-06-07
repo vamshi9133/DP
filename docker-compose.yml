@@ -1,37 +1,29 @@
 version: '3'
 services:
-  car:
-    image: vamshi9133/carrepotransport:latest
+  devops:
+    image: rahamshaik/devopsreponit:latest
     ports:
-      - "80:80"
-    volumes:
-      - "carvol"
+      - "90:80"
     deploy:
       replicas: 3
 
-  bike:
-    image: vamshi9133/bikerepotransport:latest
+  aws:
+    image: rahamshaik/awsreponit:latest
     ports:
-      - "81:80"
-    volumes:
-      - "bikevol"
+      - "91:80"
     deploy:
       replicas: 3
 
-  jeep:
-    image: vamshi9133/jeeprepotransport:latest
+  datascience:
+    image: rahamshaik/datasciencereponit:latest
     ports:
-      - "82:80"
-    volumes:
-      - "jeepvol"
+      - "92:80"
     deploy:
       replicas: 3
 
-  bus:
-    image: vamshi9133/busrepotransport:latest
+  azure:
+    image: rahamshaik/azurereponit:latest
     ports:
-      - "83:80"
-    volumes:
-      - "busvol"
+      - "93:80"
     deploy:
       replicas: 3
